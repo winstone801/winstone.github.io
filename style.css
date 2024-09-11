@@ -1,0 +1,186 @@
+style.css
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+.navbar-left .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-right a, .navbar-right .sign-up {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+.navbar-right .sign-up {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #e8f5fe;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+}
+
+.hero-text p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.cta-buttons {
+  margin-top: 20px;
+}
+
+.cta-buttons .book-now, .cta-buttons .play-video {
+  padding: 10px 20px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Statistics Section */
+.statistics {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #b6e40fe7;
+}
+
+.stat-box h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* Services Section */
+.services {
+  text-align: center;
+  padding: 50px;
+  background-color: #b6e40fe7;
+}
+
+.services h2 {
+  margin-bottom: 20px;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-card {
+  text-align: center;
+  width: 22%;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.service-card h3 {
+  margin-top: 10px;
+}
+
+.service-card .icon {
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Doctors Section */
+.doctors {
+  text-align: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+.doctor-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.doctor-card {
+  width: 22%;
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.doctor-card img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 50px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-right a, .navbar-right .sign-up {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .statistics {
+    flex-direction: column;
+  }
+  
